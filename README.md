@@ -1,1 +1,3 @@
 # 2026-summer-11-AI-automated-queries-based-on-the-db-schema-and-do-analysis-with-UI
+
+Yuyang Wei - 300484288
