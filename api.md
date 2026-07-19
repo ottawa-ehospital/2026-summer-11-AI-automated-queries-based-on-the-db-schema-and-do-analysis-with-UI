@@ -362,15 +362,9 @@ Run locally:
 make api
 ```
 
-The local backend is a FastAPI app in `src/backend/main.py`. It exposes demo endpoints backed by local JSON files and assistant endpoints backed by the remote eHospital API plus the configured model provider.
+The local backend is a FastAPI app in `src/backend/main.py`. It exposes an authentication proxy plus assistant endpoints backed by the remote eHospital API and the configured model provider.
 
-### Demo endpoints
-
-These preserve non-authenticated prototype data views backed by `src/local_db`.
-
-#### `GET /users`
-
-Returns public local demo users.
+### Authentication Endpoint
 
 #### `POST /login`
 
@@ -391,51 +385,6 @@ On success, the response preserves the returned user fields and also normalizes
 backend strips sensitive login fields before returning the payload.
 Local JSON `username/password` login is not supported by the runtime `/login`
 endpoint.
-
-#### `POST /chat`
-
-Local demo chat, not the eHospital-backed assistant.
-
-Request:
-
-```json
-{
-  "user_id": "u_001",
-  "message": "What is my weight and average sleep?"
-}
-```
-
-Response:
-
-```json
-{
-  "reply": "..."
-}
-```
-
-#### `GET /dashboard/{user_id}`
-
-Returns a local demo dashboard payload for a local `user_id`.
-
-#### `POST /mock/current-data`
-
-Generates backend-side mock vitals/check-in data for a local demo user.
-
-Request:
-
-```json
-{
-  "user_id": "u_001",
-  "date": "2026-06-03",
-  "seed": 123,
-  "ranges": {
-    "heart_rate": {
-      "min": 60,
-      "max": 100
-    }
-  }
-}
-```
 
 ### Assistant endpoints
 

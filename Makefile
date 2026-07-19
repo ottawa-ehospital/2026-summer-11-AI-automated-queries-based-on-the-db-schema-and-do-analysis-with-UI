@@ -28,7 +28,7 @@ BACKEND_ENV := PYTHONUNBUFFERED=1 BACKEND_HOST=$(API_HOST) BACKEND_PORT=$(API_PO
 FLUTTER_RUN_DEVICE := $(if $(filter 1 true yes,$(CORS)),chrome,$(FLUTTER_DEVICE))
 FLUTTER_CORS_FLAGS := $(if $(filter 1 true yes,$(CORS)),--web-browser-flag=--disable-web-security --web-browser-flag=--user-data-dir=$(CHROME_USER_DATA_DIR),)
 
-.PHONY: help api api-dev py-check api-check chat-check text-check ocr-check flutter-get flutter-analyze flutter-test flutter-run flutter-web test
+.PHONY: help api api-dev py-check api-check text-check ocr-check flutter-get flutter-analyze flutter-test flutter-run flutter-web test
 
 help:
 	@echo "Available targets:"
@@ -39,7 +39,6 @@ help:
 	@echo "  make flutter-get     Install Flutter dependencies"
 	@echo "  make py-check        Compile Python entrypoints"
 	@echo "  make api-check       Smoke-test remote login endpoint"
-	@echo "  make chat-check      Smoke-test agent chat for a demo user"
 	@echo "  make text-check      Scan source for known mojibake markers"
 	@echo "  make ocr-check       Verify report interpreter OCR/PDF dependencies"
 	@echo "  make flutter-analyze Analyze Flutter app"
@@ -59,13 +58,10 @@ api-dev:
 	$(BACKEND_ENV) $(UVICORN) src.backend.main:app --reload --host $(API_HOST) --port $(API_PORT) --log-level info --access-log
 
 py-check:
-	$(PYTHON) -m py_compile src/demo/demo2.py src/backend/main.py
+	$(PYTHON) -m py_compile src/backend/main.py src/backend/api/auth.py
 
 api-check:
-	MODEL_PROVIDER=ollama MODEL_NAME=$(OLLAMA_MODEL) $(PYTHON) -c "from fastapi.testclient import TestClient; import src.backend.api.demo as demo; exec(\"async def fake(email, password, selected_option):\\n    return {'patient_id': 20, 'user_id': 20, 'email': email, 'username': 'Test Patient', 'selectedOption': selected_option}\"); demo.authenticate_ehospital_user=fake; from src.backend.main import app; c=TestClient(app); assert c.post('/login', json={'email':'patient@example.com','password':'secret','selectedOption':'Patient'}).json()['patient_id'] == 20; assert c.post('/login', json={'username':'john','password':'john123'}).status_code == 422; print('api ok')"
-
-chat-check:
-	$(PYTHON) -c "from src.demo.demo2 import run_chat_for_user; print(run_chat_for_user('u_001', 'What is my weight, average sleep, and primary workout type?'))"
+	MODEL_PROVIDER=ollama MODEL_NAME=$(OLLAMA_MODEL) $(PYTHON) -c "from fastapi.testclient import TestClient; import src.backend.api.auth as auth; exec(\"async def fake(email, password, selected_option):\\n    return {'patient_id': 20, 'user_id': 20, 'email': email, 'username': 'Test Patient', 'selectedOption': selected_option}\"); auth.authenticate_ehospital_user=fake; from src.backend.main import app; c=TestClient(app); assert c.post('/login', json={'email':'patient@example.com','password':'secret','selectedOption':'Patient'}).json()['patient_id'] == 20; assert c.post('/login', json={'username':'john','password':'john123'}).status_code == 422; print('api ok')"
 
 text-check:
 	@powershell -NoProfile -ExecutionPolicy Bypass -File tasks.ps1 text-check

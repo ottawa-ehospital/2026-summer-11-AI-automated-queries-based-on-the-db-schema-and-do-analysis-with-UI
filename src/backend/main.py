@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.requests import Request
 
 from src.backend.api.assistant import router as assistant_router
-from src.backend.api.demo import router as demo_router
+from src.backend.api.auth import router as auth_router
 from src.backend.api.query_tools import router as query_tools_router
 from src.backend.api.report_interpreter import router as report_interpreter_router
 from src.backend.api.nutrition_monitor import router as nutrition_monitor_router
@@ -74,7 +74,7 @@ def create_app() -> FastAPI:
         return response
 
     app.add_event_handler("startup", log_startup_ready)
-    app.include_router(demo_router)
+    app.include_router(auth_router)
     app.include_router(assistant_router)
     app.include_router(query_tools_router)
     app.include_router(report_interpreter_router)

@@ -91,7 +91,6 @@ switch ($Task) {
         "  .\tasks.ps1 flutter-get                 Install Flutter dependencies"
         "  .\tasks.ps1 py-check                    Compile Python entrypoints"
         "  .\tasks.ps1 api-check                   Smoke-test remote login endpoint"
-        "  .\tasks.ps1 chat-check                  Smoke-test agent chat"
         "  .\tasks.ps1 text-check                  Scan source for known mojibake markers"
         "  .\tasks.ps1 ocr-check                   Verify report interpreter OCR/PDF dependencies"
         "  .\tasks.ps1 flutter-analyze             Analyze Flutter app"
@@ -121,15 +120,12 @@ switch ($Task) {
         Run-Uvicorn src.backend.main:app --reload --host $ApiHost --port $ApiPort --log-level info --access-log
     }
     "py-check" {
-        Run-Python -m py_compile src/demo/demo2.py src/backend/main.py
+        Run-Python -m py_compile src/backend/main.py src/backend/api/auth.py
     }
     "api-check" {
         $env:MODEL_PROVIDER = "ollama"
         $env:MODEL_NAME = $OllamaModel
-        Run-Python -c "from fastapi.testclient import TestClient; import src.backend.api.demo as demo; exec(\"async def fake(email, password, selected_option):\n    return {'patient_id': 20, 'user_id': 20, 'email': email, 'username': 'Test Patient', 'selectedOption': selected_option}\"); demo.authenticate_ehospital_user=fake; from src.backend.main import app; c=TestClient(app); assert c.post('/login', json={'email':'patient@example.com','password':'secret','selectedOption':'Patient'}).json()['patient_id'] == 20; assert c.post('/login', json={'username':'john','password':'john123'}).status_code == 422; print('api ok')"
-    }
-    "chat-check" {
-        Run-Python -c "from src.demo.demo2 import run_chat_for_user; print(run_chat_for_user('u_001', 'What is my weight, average sleep, and primary workout type?'))"
+        Run-Python -c "from fastapi.testclient import TestClient; import src.backend.api.auth as auth; exec(\"async def fake(email, password, selected_option):\n    return {'patient_id': 20, 'user_id': 20, 'email': email, 'username': 'Test Patient', 'selectedOption': selected_option}\"); auth.authenticate_ehospital_user=fake; from src.backend.main import app; c=TestClient(app); assert c.post('/login', json={'email':'patient@example.com','password':'secret','selectedOption':'Patient'}).json()['patient_id'] == 20; assert c.post('/login', json={'username':'john','password':'john123'}).status_code == 422; print('api ok')"
     }
     "text-check" {
         $markerCodes = @(0x8DEF, 0x922B, 0x9239, 0x923A, 0x9241, 0x5364, 0x63B3, 0x922E, 0x00C3, 0x00C2)

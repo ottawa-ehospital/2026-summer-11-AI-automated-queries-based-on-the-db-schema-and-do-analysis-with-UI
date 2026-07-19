@@ -5,7 +5,7 @@ import pytest
 from fastapi import HTTPException
 from fastapi.testclient import TestClient
 
-from src.backend.api import demo
+from src.backend.api import auth
 from src.backend.clients import ehospital_auth_client
 from src.backend.clients.ehospital_auth_client import (
     authenticate_ehospital_user,
@@ -43,7 +43,7 @@ def test_login_proxies_email_password_to_ehospital(monkeypatch):
             "username": "Jane Doe",
         }
 
-    monkeypatch.setattr(demo, "authenticate_ehospital_user", fake_authenticate)
+    monkeypatch.setattr(auth, "authenticate_ehospital_user", fake_authenticate)
 
     response = client.post(
         "/login",
@@ -83,7 +83,7 @@ def test_login_maps_rejected_remote_credentials(monkeypatch):
     async def fake_authenticate(email, password, selected_option):
         raise HTTPException(status_code=401, detail="Invalid email or password")
 
-    monkeypatch.setattr(demo, "authenticate_ehospital_user", fake_authenticate)
+    monkeypatch.setattr(auth, "authenticate_ehospital_user", fake_authenticate)
 
     response = client.post(
         "/login",
