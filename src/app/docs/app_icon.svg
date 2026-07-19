@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Background with purple gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6A1B9A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9C27B0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Solid background -->
+  <rect width="1024" height="1024" fill="url(#bgGrad)" />
+
+  <!-- Subtle inner glow circle -->
+  <circle cx="512" cy="480" r="380" fill="url(#innerGrad)" />
+
+  <!-- Heart shape (white) -->
+  <path d="M512 720
+    C512 720 260 560 260 390
+    C260 300 330 240 410 240
+    C460 240 505 268 512 280
+    C519 268 564 240 614 240
+    C694 240 764 300 764 390
+    C764 560 512 720 512 720Z"
+    fill="white" opacity="0.95"/>
+
+  <!-- ECG / pulse line across the heart (purple) -->
+  <polyline
+    points="310,400 370,400 400,330 430,470 460,370 490,420 520,420 550,400 580,400 614,400 640,340 666,460 692,400 720,400"
+    fill="none"
+    stroke="#7B1FA2"
+    stroke-width="28"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- App name text -->
+  <text
+    x="512"
+    y="820"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="72"
+    font-weight="bold"
+    fill="white"
+    opacity="0.95"
+    letter-spacing="4"
+  >SmartHealth</text>
+</svg>

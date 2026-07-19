@@ -1,0 +1,17 @@
+Patient Name: Test User
+Date of Birth: 1990-01-15
+Report Date: 2026-02-01
+Specimen: Blood
+
+Complete Blood Count and Basic Metabolic Panel
+
+Hemoglobin: 11.0 g/dL (Normal: 12.0-17.5)
+White Blood Cells: 7.5 x10^9/L (Normal: 4.5-11.0)
+Platelets: 420 x10^9/L (Normal: 150-400)
+Glucose: 160 mg/dL (Normal: 70-100)
+Creatinine: 0.9 mg/dL (Normal: 0.6-1.3)
+Sodium: 139 mmol/L (Normal: 135-145)
+Potassium: 4.2 mmol/L (Normal: 3.5-5.1)
+
+Notes:
+Some values are outside the provided reference ranges. Please review with a licensed clinician.

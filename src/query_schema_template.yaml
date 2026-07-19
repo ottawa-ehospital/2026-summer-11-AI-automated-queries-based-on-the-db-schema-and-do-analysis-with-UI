@@ -1,0 +1,17 @@
+entities:
+  - table_name: the table name same as the table name in the database
+    columns:
+      - column_name: the column name same as the column name in the database
+        data_type: the data type of the column in the database
+        description: a brief description of the column, including its purpose and any relevant details
+attributes:
+  - attribute_name: (sample) the name of the attribute
+    description: a brief description of the attribute, including its purpose and any relevant details
+  - customer_id:
+      description: A unique identifier for each customer in the database. This attribute is used to track customer interactions, purchases, and other relevant information. It is typically an integer or string value that serves as a primary key in the customer table.
+  - customer_name:
+      description: The name of the customer. This attribute is used to identify the customer and may be used in various contexts, such as customer service interactions, marketing campaigns, and sales records. It is typically a string value that can include first and last names or a company name.
+  -customer_gender:
+      description: The gender of the customer. This attribute is used for demographic analysis and may be used in marketing segmentation, customer profiling, and other analyses. It is typically a string value that can include options such as "Male," "Female," "Non-binary," or "Other."
+  -customer_age:
+      description: The age of the customer. This attribute is used for demographic analysis and may be used in marketing segmentation, customer profiling, and other analyses. It is typically an integer value that represents the customer's age in years.

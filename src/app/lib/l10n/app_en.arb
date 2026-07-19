@@ -1,0 +1,1372 @@
+{
+  "@@locale": "en",
+  "appTitle": "Smart Health App",
+  "@appTitle": {
+    "description": "Application title used by MaterialApp."
+  },
+  "brandName": "Smart Health",
+  "@brandName": {
+    "description": "Primary product name displayed in the login header."
+  },
+  "loginHeaderSubtitle": "Your personal health dashboard",
+  "@loginHeaderSubtitle": {
+    "description": "Subtitle displayed below the product name on the login screen."
+  },
+  "signInTitle": "Sign in",
+  "@signInTitle": {
+    "description": "Login form title."
+  },
+  "signInSubtitle": "Enter your eHospital credentials to continue",
+  "@signInSubtitle": {
+    "description": "Login form helper text."
+  },
+  "emailAddressHint": "Email address",
+  "@emailAddressHint": {
+    "description": "Email input hint on the login screen."
+  },
+  "passwordHint": "Password",
+  "@passwordHint": {
+    "description": "Password input hint on the login screen."
+  },
+  "signInButton": "Sign In",
+  "@signInButton": {
+    "description": "Primary login button label."
+  },
+  "emailRequiredError": "Please enter your email",
+  "@emailRequiredError": {
+    "description": "Validation error when the login email field is empty."
+  },
+  "emailNotFoundError": "Email not found. Please try again.",
+  "@emailNotFoundError": {
+    "description": "Login error when the backend cannot find the email."
+  },
+  "passwordRequiredError": "Please enter your password",
+  "@passwordRequiredError": {
+    "description": "Validation error when the login password field is empty."
+  },
+  "invalidCredentialsError": "Invalid email or password. Please try again.",
+  "@invalidCredentialsError": {
+    "description": "Login error when eHospital credentials are rejected."
+  },
+  "unsupportedIdentityError": "This identity signed in successfully, but patient features require a Patient login.",
+  "@unsupportedIdentityError": {
+    "description": "Login error when a non-patient identity signs in but the app requires patient context."
+  },
+  "privacyNoticeTitle": "Privacy Notice",
+  "@privacyNoticeTitle": {
+    "description": "Title of the local AI privacy notice dialog."
+  },
+  "privacyNoticeBody": "This app uses a local Llama model through Ollama to process your health data. By continuing, you agree that your data may be sent to the local Ollama service running on this device for processing. Please review our Privacy Policy for more details.",
+  "@privacyNoticeBody": {
+    "description": "Body copy of the local AI privacy notice dialog."
+  },
+  "privacyAgreeButton": "I Agree",
+  "@privacyAgreeButton": {
+    "description": "Privacy notice confirmation button."
+  },
+  "medicalDisclaimerTitle": "Medical Disclaimer",
+  "@medicalDisclaimerTitle": {
+    "description": "Title of the medical disclaimer dialog."
+  },
+  "medicalDisclaimerBody": "IMPORTANT: This app is for informational and wellness purposes only. It is NOT a medical device and does NOT provide medical advice, diagnosis, or treatment recommendations.\n\nAll wellness indicators, risk scores, and health data displayed are for general awareness only and must not be used to make medical decisions. This app has not been approved by the FDA or any regulatory authority as a medical device.\n\nAlways consult a qualified, licensed healthcare professional for any health concerns or before making any health-related decisions.",
+  "@medicalDisclaimerBody": {
+    "description": "Body copy of the medical disclaimer dialog."
+  },
+  "medicalDisclaimerConfirmButton": "I Understand",
+  "@medicalDisclaimerConfirmButton": {
+    "description": "Medical disclaimer confirmation button."
+  },
+  "patientDashboardTitle": "Patient Dashboard",
+  "@patientDashboardTitle": {
+    "description": "Dashboard screen title."
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Settings screen title."
+  },
+  "logoutTitle": "Logout",
+  "@logoutTitle": {
+    "description": "Logout action title."
+  },
+  "cancelButton": "Cancel",
+  "@cancelButton": {
+    "description": "Generic cancel button label."
+  },
+  "closeButton": "Close",
+  "@closeButton": {
+    "description": "Generic close button label."
+  },
+  "notificationsEnabledMessage": "Daily reminders enabled at 9:00 AM",
+  "@notificationsEnabledMessage": {
+    "description": "Snackbar shown after enabling daily health reminders."
+  },
+  "notificationsDisabledMessage": "Notifications disabled",
+  "@notificationsDisabledMessage": {
+    "description": "Snackbar shown after disabling notifications."
+  },
+  "logoutConfirmBody": "Are you sure you want to logout?",
+  "@logoutConfirmBody": {
+    "description": "Logout confirmation dialog body."
+  },
+  "accountSection": "Account",
+  "@accountSection": {
+    "description": "Settings section label for account settings."
+  },
+  "profileTitle": "Profile",
+  "@profileTitle": {
+    "description": "Profile settings tile title."
+  },
+  "notificationsSection": "Notifications",
+  "@notificationsSection": {
+    "description": "Settings section label for notification settings."
+  },
+  "dailyHealthRemindersTitle": "Daily Health Reminders",
+  "@dailyHealthRemindersTitle": {
+    "description": "Settings tile title for daily reminders."
+  },
+  "dailyHealthRemindersSubtitle": "9:00 AM reminder to check vitals",
+  "@dailyHealthRemindersSubtitle": {
+    "description": "Settings tile subtitle for daily reminders."
+  },
+  "emergencySection": "Emergency",
+  "@emergencySection": {
+    "description": "Settings section label for emergency settings."
+  },
+  "emergencySosCardTitle": "Emergency SOS Card",
+  "@emergencySosCardTitle": {
+    "description": "Settings tile title for emergency card."
+  },
+  "emergencySosCardSubtitle": "Blood type, allergies, contact",
+  "@emergencySosCardSubtitle": {
+    "description": "Settings tile subtitle for emergency card."
+  },
+  "aboutSection": "About",
+  "@aboutSection": {
+    "description": "Settings section label for about information."
+  },
+  "appVersionTitle": "App Version",
+  "@appVersionTitle": {
+    "description": "Settings tile title for app version."
+  },
+  "appVersionValue": "1.0.0",
+  "@appVersionValue": {
+    "description": "Displayed app version."
+  },
+  "smartHealthAppSubtitle": "AI-powered patient monitoring",
+  "@smartHealthAppSubtitle": {
+    "description": "Settings subtitle for the app info tile."
+  },
+  "dataSourcesTitle": "Data Sources",
+  "@dataSourcesTitle": {
+    "description": "Data sources dialog and settings section title."
+  },
+  "clinicalWearableDataTitle": "Clinical & Wearable Data",
+  "@clinicalWearableDataTitle": {
+    "description": "Settings tile title for data sources."
+  },
+  "clinicalWearableDataSubtitle": "eHospital patient database (institutional)",
+  "@clinicalWearableDataSubtitle": {
+    "description": "Settings tile subtitle for clinical and wearable data."
+  },
+  "aiHealthResponsesTitle": "AI Health Responses",
+  "@aiHealthResponsesTitle": {
+    "description": "Settings tile title for AI response sources."
+  },
+  "aiHealthResponsesSubtitle": "Configured AI provider",
+  "@aiHealthResponsesSubtitle": {
+    "description": "Settings tile subtitle for AI response sources."
+  },
+  "vitalsReferenceRangesTitle": "Vitals Reference Ranges",
+  "@vitalsReferenceRangesTitle": {
+    "description": "Settings tile title for vital reference ranges."
+  },
+  "vitalsReferenceRangesSubtitle": "American Heart Association (AHA) guidelines",
+  "@vitalsReferenceRangesSubtitle": {
+    "description": "Settings tile subtitle for vital reference ranges."
+  },
+  "dangerZoneSection": "Danger Zone",
+  "@dangerZoneSection": {
+    "description": "Settings section label for destructive actions."
+  },
+  "logoutSubtitle": "Clear all data and return to login",
+  "@logoutSubtitle": {
+    "description": "Settings logout tile subtitle."
+  },
+  "sourceClinicalTitle": "Clinical Records & Risk Scores",
+  "@sourceClinicalTitle": {
+    "description": "Data source item title for clinical records."
+  },
+  "sourceClinicalDescription": "Sourced from the eHospital institutional patient database. Includes ECG results, diabetes analysis, heart disease risk, stroke prediction, lab tests, and diagnosis records provided by the connected hospital system.",
+  "@sourceClinicalDescription": {
+    "description": "Data source description for clinical records."
+  },
+  "sourceWearableTitle": "Wearable Vitals",
+  "@sourceWearableTitle": {
+    "description": "Data source item title for wearable vitals."
+  },
+  "sourceWearableDescription": "Heart rate, steps, calories, and sleep data sourced from Apple HealthKit via Apple Watch or other connected health devices.",
+  "@sourceWearableDescription": {
+    "description": "Data source description for wearable vitals."
+  },
+  "sourceAssistantTitle": "AI Health Assistant",
+  "@sourceAssistantTitle": {
+    "description": "Data source item title for AI assistant."
+  },
+  "sourceAssistantDescription": "Responses generated by a local Llama model through Ollama. For informational purposes only - not a substitute for professional medical advice.",
+  "@sourceAssistantDescription": {
+    "description": "Data source description for AI assistant."
+  },
+  "sourceVitalsTitle": "Vitals Reference Ranges",
+  "@sourceVitalsTitle": {
+    "description": "Data source item title for vitals reference ranges."
+  },
+  "sourceVitalsDescription": "Normal ranges for blood pressure, heart rate, and SpO2 are based on guidelines from the American Heart Association (AHA) and World Health Organization (WHO).",
+  "@sourceVitalsDescription": {
+    "description": "Data source description for vitals reference ranges."
+  },
+  "sourceBmiTitle": "BMI Classification",
+  "@sourceBmiTitle": {
+    "description": "Data source item title for BMI classification."
+  },
+  "sourceBmiDescription": "Body Mass Index categories (Underweight, Normal, Overweight, Obese) follow the WHO BMI classification standard.",
+  "@sourceBmiDescription": {
+    "description": "Data source description for BMI classification."
+  },
+  "medicalAdviceShortDisclaimer": "This app is for informational purposes only and does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional.",
+  "@medicalAdviceShortDisclaimer": {
+    "description": "Short medical disclaimer displayed in data sources."
+  },
+  "profileScreenTitle": "My Profile",
+  "@profileScreenTitle": {
+    "description": "Profile screen title."
+  },
+  "profileNotLoggedIn": "Not logged in",
+  "@profileNotLoggedIn": {
+    "description": "Profile error when no patient id is stored."
+  },
+  "profileInvalidPatientId": "Invalid patient ID",
+  "@profileInvalidPatientId": {
+    "description": "Profile error when stored patient id cannot be parsed."
+  },
+  "profileNetworkError": "Network error: {error}",
+  "@profileNetworkError": {
+    "description": "Profile error when loading from eHospital fails.",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Timeout"
+      }
+    }
+  },
+  "profileNotFound": "Profile not found",
+  "@profileNotFound": {
+    "description": "Profile empty state."
+  },
+  "unknownValue": "Unknown",
+  "@unknownValue": {
+    "description": "Generic unknown fallback value."
+  },
+  "patientIdLabel": "Patient ID",
+  "@patientIdLabel": {
+    "description": "Profile field label for patient id."
+  },
+  "usernameLabel": "Username",
+  "@usernameLabel": {
+    "description": "Profile field label for username."
+  },
+  "emailLabel": "Email",
+  "@emailLabel": {
+    "description": "Profile field label for email."
+  },
+  "roleLabel": "Role",
+  "@roleLabel": {
+    "description": "Profile field label for role."
+  },
+  "statusLabel": "Status",
+  "@statusLabel": {
+    "description": "Profile field label for status."
+  },
+  "memberSinceLabel": "Member Since",
+  "@memberSinceLabel": {
+    "description": "Profile field label for creation date."
+  },
+  "bmiCalculatorTitle": "BMI Calculator",
+  "@bmiCalculatorTitle": {
+    "description": "BMI calculator screen title."
+  },
+  "validHeightWeightError": "Please enter valid height and weight",
+  "@validHeightWeightError": {
+    "description": "BMI validation error."
+  },
+  "heightCmLabel": "Height (cm)",
+  "@heightCmLabel": {
+    "description": "BMI height input label."
+  },
+  "weightKgLabel": "Weight (kg)",
+  "@weightKgLabel": {
+    "description": "BMI weight input label."
+  },
+  "calculateBmiButton": "Calculate BMI",
+  "@calculateBmiButton": {
+    "description": "BMI calculate button."
+  },
+  "bmiReferenceTitle": "BMI Reference",
+  "@bmiReferenceTitle": {
+    "description": "BMI reference card title."
+  },
+  "bmiUnderweight": "Underweight",
+  "@bmiUnderweight": {
+    "description": "BMI category."
+  },
+  "bmiNormal": "Normal",
+  "@bmiNormal": {
+    "description": "BMI category."
+  },
+  "bmiOverweight": "Overweight",
+  "@bmiOverweight": {
+    "description": "BMI category."
+  },
+  "bmiObese": "Obese",
+  "@bmiObese": {
+    "description": "BMI category."
+  },
+  "medicationsTitle": "Medications",
+  "@medicationsTitle": {
+    "description": "Medication tracker screen title."
+  },
+  "addMedicationTitle": "Add Medication",
+  "@addMedicationTitle": {
+    "description": "Medication bottom sheet title and button label."
+  },
+  "medicationNameLabel": "Medication Name",
+  "@medicationNameLabel": {
+    "description": "Medication name input label."
+  },
+  "dosageLabel": "Dosage (e.g. 10mg)",
+  "@dosageLabel": {
+    "description": "Medication dosage input label."
+  },
+  "frequencyLabel": "Frequency (e.g. Once daily)",
+  "@frequencyLabel": {
+    "description": "Medication frequency input label."
+  },
+  "timeLabel": "Time (e.g. 8:00 AM)",
+  "@timeLabel": {
+    "description": "Medication time input label."
+  },
+  "noMedicationsYet": "No medications yet",
+  "@noMedicationsYet": {
+    "description": "Medication empty state title."
+  },
+  "tapAddMedication": "Tap + to add one",
+  "@tapAddMedication": {
+    "description": "Medication empty state subtitle."
+  },
+  "medicationSummary": "{dosage} | {frequency} | {time}",
+  "@medicationSummary": {
+    "description": "Medication card subtitle.",
+    "placeholders": {
+      "dosage": {
+        "type": "String",
+        "example": "10mg"
+      },
+      "frequency": {
+        "type": "String",
+        "example": "Once daily"
+      },
+      "time": {
+        "type": "String",
+        "example": "8:00 AM"
+      }
+    }
+  },
+  "symptomLogTitle": "Symptom Log",
+  "@symptomLogTitle": {
+    "description": "Symptom logger screen title."
+  },
+  "logSymptomTitle": "Log Symptom",
+  "@logSymptomTitle": {
+    "description": "Symptom bottom sheet title and button label."
+  },
+  "symptomNameLabel": "Symptom Name",
+  "@symptomNameLabel": {
+    "description": "Symptom name input label."
+  },
+  "severityLabel": "Severity",
+  "@severityLabel": {
+    "description": "Symptom severity label."
+  },
+  "notesOptionalLabel": "Notes (optional)",
+  "@notesOptionalLabel": {
+    "description": "Symptom notes input label."
+  },
+  "noSymptomsLogged": "No symptoms logged",
+  "@noSymptomsLogged": {
+    "description": "Symptom empty state title."
+  },
+  "tapLogSymptom": "Tap + to log one",
+  "@tapLogSymptom": {
+    "description": "Symptom empty state subtitle."
+  },
+  "severityVeryMild": "Very Mild",
+  "@severityVeryMild": {
+    "description": "Severity value 1."
+  },
+  "severityMild": "Mild",
+  "@severityMild": {
+    "description": "Severity value 2."
+  },
+  "severityModerate": "Moderate",
+  "@severityModerate": {
+    "description": "Severity value 3."
+  },
+  "severitySevere": "Severe",
+  "@severitySevere": {
+    "description": "Severity value 4."
+  },
+  "severityVerySevere": "Very Severe",
+  "@severityVerySevere": {
+    "description": "Severity value 5."
+  },
+  "severityValueLabel": "{severity} | {label}",
+  "@severityValueLabel": {
+    "description": "Current severity in symptom bottom sheet.",
+    "placeholders": {
+      "severity": {
+        "type": "int",
+        "example": "3"
+      },
+      "label": {
+        "type": "String",
+        "example": "Moderate"
+      }
+    }
+  },
+  "severityBadgeLabel": "{label} ({severity}/5)",
+  "@severityBadgeLabel": {
+    "description": "Severity badge in symptom card.",
+    "placeholders": {
+      "label": {
+        "type": "String",
+        "example": "Moderate"
+      },
+      "severity": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "saveButton": "Save",
+  "@saveButton": {
+    "description": "Generic save button label."
+  },
+  "tapToSet": "Tap to set",
+  "@tapToSet": {
+    "description": "Placeholder shown when editable emergency information has not been set."
+  },
+  "healthGoalsTitle": "Health Goals",
+  "@healthGoalsTitle": {
+    "description": "Health goals screen title."
+  },
+  "dailyStepsTitle": "Daily Steps",
+  "@dailyStepsTitle": {
+    "description": "Daily steps goal card title."
+  },
+  "sleepTitle": "Sleep",
+  "@sleepTitle": {
+    "description": "Sleep goal card title."
+  },
+  "caloriesBurnedTitle": "Calories Burned",
+  "@caloriesBurnedTitle": {
+    "description": "Calories burned goal card title."
+  },
+  "stepsGoalTitle": "Steps",
+  "@stepsGoalTitle": {
+    "description": "Short title used when editing the steps goal."
+  },
+  "caloriesGoalTitle": "Calories",
+  "@caloriesGoalTitle": {
+    "description": "Short title used when editing the calories goal."
+  },
+  "stepsUnit": "steps",
+  "@stepsUnit": {
+    "description": "Steps unit label."
+  },
+  "hoursUnit": "hours",
+  "@hoursUnit": {
+    "description": "Long hours unit label."
+  },
+  "hrsUnit": "hrs",
+  "@hrsUnit": {
+    "description": "Short hours unit label."
+  },
+  "kcalUnit": "kcal",
+  "@kcalUnit": {
+    "description": "Kilocalorie unit label."
+  },
+  "healthGoalsGoalsTab": "Goals",
+  "@healthGoalsGoalsTab": {
+    "description": "Health goals tab label for goal progress."
+  },
+  "healthGoalsTrainingRecordsTab": "Training Records",
+  "@healthGoalsTrainingRecordsTab": {
+    "description": "Health goals tab label for training records."
+  },
+  "trainingRecordsTitle": "Training Records",
+  "@trainingRecordsTitle": {
+    "description": "Training records section title."
+  },
+  "trainingRecordsRefreshTooltip": "Refresh training records",
+  "@trainingRecordsRefreshTooltip": {
+    "description": "Tooltip for refreshing remote training records."
+  },
+  "trainingRecordsSyncTooltip": "Sync platform workouts",
+  "@trainingRecordsSyncTooltip": {
+    "description": "Tooltip for syncing workouts from Apple Health or Google Health."
+  },
+  "trainingRecordsLoading": "Loading training records...",
+  "@trainingRecordsLoading": {
+    "description": "Loading text for training records."
+  },
+  "trainingRecordsEmpty": "No synced training records available.",
+  "@trainingRecordsEmpty": {
+    "description": "Empty state text for training records."
+  },
+  "trainingRecordsError": "Could not load training records.",
+  "@trainingRecordsError": {
+    "description": "Generic error text for training records."
+  },
+  "trainingRecordsSourceLabel": "Source",
+  "@trainingRecordsSourceLabel": {
+    "description": "Metric label for training record source provider."
+  },
+  "trainingRecordsDurationLabel": "Duration",
+  "@trainingRecordsDurationLabel": {
+    "description": "Metric label for training record duration."
+  },
+  "trainingRecordsDistanceLabel": "Distance",
+  "@trainingRecordsDistanceLabel": {
+    "description": "Metric label for training record distance."
+  },
+  "trainingRecordsEnergyLabel": "Energy",
+  "@trainingRecordsEnergyLabel": {
+    "description": "Metric label for training record energy."
+  },
+  "trainingRecordsStepsLabel": "Steps",
+  "@trainingRecordsStepsLabel": {
+    "description": "Metric label for training record steps."
+  },
+  "trainingRecordsUnknownDate": "Unknown date",
+  "@trainingRecordsUnknownDate": {
+    "description": "Fallback date label for a training record with no timestamp."
+  },
+  "trainingRecordsSyncSuccess": "Workout sync complete.",
+  "@trainingRecordsSyncSuccess": {
+    "description": "Status text shown after platform workout sync succeeds."
+  },
+  "editGoalTooltip": "Edit goal",
+  "@editGoalTooltip": {
+    "description": "Tooltip for editing a goal."
+  },
+  "editGoalTitle": "Edit {title} Goal",
+  "@editGoalTitle": {
+    "description": "Dialog title for editing a health goal.",
+    "placeholders": {
+      "title": {
+        "type": "String",
+        "example": "Steps"
+      }
+    }
+  },
+  "metricValueInt": "{value} {unit}",
+  "@metricValueInt": {
+    "description": "Integer metric value with unit.",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "example": "8000"
+      },
+      "unit": {
+        "type": "String",
+        "example": "steps"
+      }
+    }
+  },
+  "metricValueDecimal": "{value} {unit}",
+  "@metricValueDecimal": {
+    "description": "Decimal metric value with unit.",
+    "placeholders": {
+      "value": {
+        "type": "double",
+        "format": "decimalPattern",
+        "example": "8.0"
+      },
+      "unit": {
+        "type": "String",
+        "example": "hours"
+      }
+    }
+  },
+  "goalProgressValue": "{actual} / {goal} {unit}",
+  "@goalProgressValue": {
+    "description": "Goal card progress text.",
+    "placeholders": {
+      "actual": {
+        "type": "String",
+        "example": "5500"
+      },
+      "goal": {
+        "type": "String",
+        "example": "8000"
+      },
+      "unit": {
+        "type": "String",
+        "example": "steps"
+      }
+    }
+  },
+  "emergencySosTitle": "Emergency SOS",
+  "@emergencySosTitle": {
+    "description": "Emergency SOS screen title."
+  },
+  "emergencyUpdateWarning": "Keep this information up to date. It could save your life in an emergency.",
+  "@emergencyUpdateWarning": {
+    "description": "Warning banner copy on the Emergency SOS screen."
+  },
+  "medicalInformationTitle": "Medical Information",
+  "@medicalInformationTitle": {
+    "description": "Emergency SOS medical information section title."
+  },
+  "emergencyContactTitle": "Emergency Contact",
+  "@emergencyContactTitle": {
+    "description": "Emergency SOS contact section title."
+  },
+  "bloodTypeLabel": "Blood Type",
+  "@bloodTypeLabel": {
+    "description": "Emergency field label for blood type."
+  },
+  "allergiesLabel": "Allergies",
+  "@allergiesLabel": {
+    "description": "Emergency field label for allergies."
+  },
+  "contactNameLabel": "Contact Name",
+  "@contactNameLabel": {
+    "description": "Emergency field label for contact name."
+  },
+  "contactPhoneLabel": "Contact Phone",
+  "@contactPhoneLabel": {
+    "description": "Emergency field label for contact phone."
+  },
+  "editFieldTitle": "Edit {title}",
+  "@editFieldTitle": {
+    "description": "Dialog title for editing an emergency information field.",
+    "placeholders": {
+      "title": {
+        "type": "String",
+        "example": "Blood Type"
+      }
+    }
+  },
+  "callEmergencyButton": "CALL EMERGENCY (911)",
+  "@callEmergencyButton": {
+    "description": "Emergency call button label."
+  },
+  "cannotLaunchPhoneDialer": "Cannot launch phone dialer",
+  "@cannotLaunchPhoneDialer": {
+    "description": "Snackbar shown when the emergency phone dialer cannot be opened."
+  },
+  "dashboardHelloUser": "Hello, {username}!",
+  "@dashboardHelloUser": {
+    "description": "Dashboard greeting for a signed-in patient.",
+    "placeholders": {
+      "username": {
+        "type": "String",
+        "example": "Jane"
+      }
+    }
+  },
+  "dashboardWelcome": "Welcome!",
+  "@dashboardWelcome": {
+    "description": "Dashboard fallback greeting."
+  },
+  "dashboardPrompt": "What would you like to check today?",
+  "@dashboardPrompt": {
+    "description": "Dashboard helper text under the greeting."
+  },
+  "healthMonitoringSection": "Health Monitoring",
+  "@healthMonitoringSection": {
+    "description": "Dashboard section title for monitoring features."
+  },
+  "healthManagementSection": "Health Management",
+  "@healthManagementSection": {
+    "description": "Dashboard section title for management features."
+  },
+  "wearableVitalsTitle": "Wearable Vitals",
+  "@wearableVitalsTitle": {
+    "description": "Dashboard card title for wearable vitals."
+  },
+  "wearableVitalsSubtitle": "Steps | Calories | HR",
+  "@wearableVitalsSubtitle": {
+    "description": "Dashboard card subtitle for wearable vitals."
+  },
+  "vitalsHistoryTitle": "Vitals History",
+  "@vitalsHistoryTitle": {
+    "description": "Dashboard card title for vitals history."
+  },
+  "vitalsHistorySubtitle": "Clinical records",
+  "@vitalsHistorySubtitle": {
+    "description": "Dashboard card subtitle for vitals history."
+  },
+  "healthInsightsTitle": "Health Insights",
+  "@healthInsightsTitle": {
+    "description": "Dashboard card title for health insights."
+  },
+  "healthInsightsSubtitle": "Risk analysis & alerts",
+  "@healthInsightsSubtitle": {
+    "description": "Dashboard card subtitle for health insights."
+  },
+  "trendAnalysisTitle": "Trend Analysis",
+  "@trendAnalysisTitle": {
+    "description": "Dashboard card title for trend analysis."
+  },
+  "trendAnalysisSubtitle": "This week vs last",
+  "@trendAnalysisSubtitle": {
+    "description": "Dashboard card subtitle for trend analysis."
+  },
+  "medicationsSubtitle": "Track & manage meds",
+  "@medicationsSubtitle": {
+    "description": "Dashboard card subtitle for medications."
+  },
+  "symptomLogSubtitle": "Daily symptom diary",
+  "@symptomLogSubtitle": {
+    "description": "Dashboard card subtitle for symptom log."
+  },
+  "healthGoalsSubtitle": "Steps | Sleep | Calories",
+  "@healthGoalsSubtitle": {
+    "description": "Dashboard card subtitle for health goals."
+  },
+  "bmiCalculatorSubtitle": "Check your BMI",
+  "@bmiCalculatorSubtitle": {
+    "description": "Dashboard card subtitle for BMI calculator."
+  },
+  "aiHealthAssistantTitle": "AI Health Assistant",
+  "@aiHealthAssistantTitle": {
+    "description": "Dashboard featured card title for AI assistant."
+  },
+  "aiHealthAssistantSubtitle": "Ask AI about your health data",
+  "@aiHealthAssistantSubtitle": {
+    "description": "Dashboard featured card subtitle for AI assistant."
+  },
+  "assistantPickerTitle": "Choose an AI tool",
+  "@assistantPickerTitle": {
+    "description": "Title for the AI assistant module picker."
+  },
+  "assistantPickerOpenAction": "Open {moduleName}",
+  "@assistantPickerOpenAction": {
+    "description": "Primary action for opening the selected AI assistant module.",
+    "placeholders": {
+      "moduleName": {
+        "type": "String",
+        "example": "Chat"
+      }
+    }
+  },
+  "assistantModuleChatLabel": "Chat",
+  "@assistantModuleChatLabel": {
+    "description": "Label for the health chat AI module."
+  },
+  "assistantModuleChatDescription": "Ask questions about your health data and wellness trends.",
+  "@assistantModuleChatDescription": {
+    "description": "Description for the health chat AI module."
+  },
+  "assistantModuleReportLabel": "Report Analyze",
+  "@assistantModuleReportLabel": {
+    "description": "Label for the report analysis AI module."
+  },
+  "assistantModuleReportDescription": "Upload lab work, reports, images, or PDFs for plain-language analysis.",
+  "@assistantModuleReportDescription": {
+    "description": "Description for the report analysis AI module."
+  },
+  "assistantModuleNutritionLabel": "Nutrition Monitor",
+  "@assistantModuleNutritionLabel": {
+    "description": "Label for the nutrition monitoring AI module."
+  },
+  "assistantModuleNutritionDescription": "Analyze meal images, check EHR-aware nutrition risks, and track goals.",
+  "@assistantModuleNutritionDescription": {
+    "description": "Description for the nutrition monitoring AI module."
+  },
+  "clearChatTooltip": "Clear chat",
+  "@clearChatTooltip": {
+    "description": "Tooltip for clearing AI assistant chat history."
+  },
+  "newChatTooltip": "New chat",
+  "@newChatTooltip": {
+    "description": "Tooltip for starting a new health assistant chat session."
+  },
+  "assistantHistoryTooltip": "Chat history",
+  "@assistantHistoryTooltip": {
+    "description": "Tooltip for opening health assistant chat history."
+  },
+  "assistantNoHistory": "No saved chats yet",
+  "@assistantNoHistory": {
+    "description": "Empty state shown when no health assistant chat history exists."
+  },
+  "aiWellnessAssistantTitle": "AI Wellness Assistant",
+  "@aiWellnessAssistantTitle": {
+    "description": "Health assistant banner title."
+  },
+  "aiWellnessAssistantDisclaimer": "General wellness info only | Not medical advice",
+  "@aiWellnessAssistantDisclaimer": {
+    "description": "Short disclaimer shown in the health assistant banner."
+  },
+  "assistantEmptyTitle": "Ask about your wellness data",
+  "@assistantEmptyTitle": {
+    "description": "Health assistant empty chat title."
+  },
+  "assistantPromptHeartRate": "\"What does my heart rate trend mean?\"",
+  "@assistantPromptHeartRate": {
+    "description": "Example health assistant prompt about heart rate."
+  },
+  "assistantPromptActivity": "\"How can I improve my activity levels?\"",
+  "@assistantPromptActivity": {
+    "description": "Example health assistant prompt about activity."
+  },
+  "assistantGeneralDisclaimer": "For general wellness info only.\nNot a substitute for medical advice.",
+  "@assistantGeneralDisclaimer": {
+    "description": "Health assistant empty state disclaimer."
+  },
+  "assistantInputHint": "Ask about your health...",
+  "@assistantInputHint": {
+    "description": "Health assistant chat input placeholder."
+  },
+  "assistantLoginRequired": "Please log in before using the health assistant.",
+  "@assistantLoginRequired": {
+    "description": "Assistant response when no patient id is available."
+  },
+  "assistantErrorMessage": "Error: {error}",
+  "@assistantErrorMessage": {
+    "description": "Assistant response when AI generation fails.",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Timeout"
+      }
+    }
+  },
+  "assistantThinking": "Thinking...",
+  "@assistantThinking": {
+    "description": "Assistant typing indicator label."
+  },
+  "deviceManagerTitle": "Device Manager",
+  "@deviceManagerTitle": {
+    "description": "Device connection screen title."
+  },
+  "deviceInfoTitle": "Apple Watch -> eHospital",
+  "@deviceInfoTitle": {
+    "description": "Device screen info banner title."
+  },
+  "deviceInfoBody": "On a real device: patient logs in and taps \"Sync Apple Watch\" to push live Health data.\nFor demo/testing: tap Simulate to generate 7 days of realistic wearable data for any patient.",
+  "@deviceInfoBody": {
+    "description": "Device screen info banner body."
+  },
+  "patientsInDb": "{count} Patients in eHospital DB",
+  "@patientsInDb": {
+    "description": "Device screen patient count section label.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "4"
+      }
+    }
+  },
+  "patientFallbackName": "Patient {id}",
+  "@patientFallbackName": {
+    "description": "Fallback patient name when username is missing.",
+    "placeholders": {
+      "id": {
+        "type": "String",
+        "example": "101"
+      }
+    }
+  },
+  "connectedStatus": "CONNECTED",
+  "@connectedStatus": {
+    "description": "Device status chip when wearable data exists."
+  },
+  "noDataStatus": "NO DATA",
+  "@noDataStatus": {
+    "description": "Device status chip when no wearable data exists."
+  },
+  "patientDeviceMeta": "ID: {patientId}  |  {email}",
+  "@patientDeviceMeta": {
+    "description": "Patient card metadata line.",
+    "placeholders": {
+      "patientId": {
+        "type": "String",
+        "example": "101"
+      },
+      "email": {
+        "type": "String",
+        "example": "jane@example.com"
+      }
+    }
+  },
+  "neverSynced": "Never synced",
+  "@neverSynced": {
+    "description": "Device last sync fallback."
+  },
+  "recordsCount": "{count} records",
+  "@recordsCount": {
+    "description": "Wearable records count label.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "7"
+      }
+    }
+  },
+  "simulateButton": "Simulate",
+  "@simulateButton": {
+    "description": "Device simulation button label."
+  },
+  "justNow": "Just now",
+  "@justNow": {
+    "description": "Relative time label for immediate sync."
+  },
+  "minutesAgo": "{minutes}m ago",
+  "@minutesAgo": {
+    "description": "Relative time label in minutes.",
+    "placeholders": {
+      "minutes": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+  "hoursAgo": "{hours}h ago",
+  "@hoursAgo": {
+    "description": "Relative time label in hours.",
+    "placeholders": {
+      "hours": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "daysAgo": "{days}d ago",
+  "@daysAgo": {
+    "description": "Relative time label in days.",
+    "placeholders": {
+      "days": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "simulatingDataTitle": "Simulating Data",
+  "@simulatingDataTitle": {
+    "description": "Device simulation dialog title."
+  },
+  "patientNameLabel": "Patient: {name}",
+  "@patientNameLabel": {
+    "description": "Simulation dialog patient label.",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Jane"
+      }
+    }
+  },
+  "appleHealthPipeline": "Apple Watch  -> Apple Health  -> eHospital DB",
+  "@appleHealthPipeline": {
+    "description": "Simulation dialog data pipeline label."
+  },
+  "uploadCompleteMessage": "{total} days uploaded to eHospital.",
+  "@uploadCompleteMessage": {
+    "description": "Simulation dialog completion message.",
+    "placeholders": {
+      "total": {
+        "type": "int",
+        "example": "7"
+      }
+    }
+  },
+  "uploadingDayMessage": "Uploading day {progress} of {total}...",
+  "@uploadingDayMessage": {
+    "description": "Simulation dialog upload progress message.",
+    "placeholders": {
+      "progress": {
+        "type": "int",
+        "example": "3"
+      },
+      "total": {
+        "type": "int",
+        "example": "7"
+      }
+    }
+  },
+  "lastWeekLabel": "Last Week",
+  "@lastWeekLabel": {
+    "description": "Trend comparison legend label for last week."
+  },
+  "thisWeekLabel": "This Week",
+  "@thisWeekLabel": {
+    "description": "Trend comparison legend label for this week."
+  },
+  "trendDisclaimer": "For informational purposes only. Not a medical device. Always consult a qualified healthcare professional before making any medical decisions.",
+  "@trendDisclaimer": {
+    "description": "Trend analysis disclaimer banner text."
+  },
+  "stepsTitle": "Steps",
+  "@stepsTitle": {
+    "description": "Trend metric title for steps."
+  },
+  "stepsTrendDescription": "Average daily steps this week vs last week. Goal: 10,000 steps/day.",
+  "@stepsTrendDescription": {
+    "description": "Trend metric description for steps."
+  },
+  "activeCaloriesTitle": "Active Calories",
+  "@activeCaloriesTitle": {
+    "description": "Trend metric title for active calories."
+  },
+  "activeCaloriesTrendDescription": "Average calories burned per day. Healthy range: 300-600 kcal/day.",
+  "@activeCaloriesTrendDescription": {
+    "description": "Trend metric description for active calories."
+  },
+  "heartRateTitle": "Heart Rate",
+  "@heartRateTitle": {
+    "description": "Trend metric title for heart rate."
+  },
+  "heartRateTrendDescription": "Average resting heart rate. Normal range: 60-100 bpm.",
+  "@heartRateTrendDescription": {
+    "description": "Trend metric description for heart rate."
+  },
+  "sleepTrendDescription": "Average hours of sleep per night. Recommended: 7-9 hrs/night.",
+  "@sleepTrendDescription": {
+    "description": "Trend metric description for sleep."
+  },
+  "bpmUnit": "bpm",
+  "@bpmUnit": {
+    "description": "Beats per minute unit label."
+  },
+  "noDataThisWeek": "No data this week",
+  "@noDataThisWeek": {
+    "description": "Trend metric status when current week has no data."
+  },
+  "belowNormalRange": "Below normal range",
+  "@belowNormalRange": {
+    "description": "Trend metric status below normal range."
+  },
+  "aboveNormalRange": "Above normal range",
+  "@aboveNormalRange": {
+    "description": "Trend metric status above normal range."
+  },
+  "withinNormalRange": "Within normal range",
+  "@withinNormalRange": {
+    "description": "Trend metric status within normal range."
+  },
+  "trendChartAxisLabel": "{period}\n{value} {unit}",
+  "@trendChartAxisLabel": {
+    "description": "Trend chart bottom axis label with period and metric value.",
+    "placeholders": {
+      "period": {
+        "type": "String",
+        "example": "This Week"
+      },
+      "value": {
+        "type": "String",
+        "example": "7200"
+      },
+      "unit": {
+        "type": "String",
+        "example": "steps"
+      }
+    }
+  },
+  "aiInsightLabel": "AI Insight",
+  "@aiInsightLabel": {
+    "description": "AI insight label shown in trend cards."
+  },
+  "generatingInsight": "Generating...",
+  "@generatingInsight": {
+    "description": "AI insight loading label."
+  },
+  "syncDataToGenerateInsight": "Sync data to generate insight.",
+  "@syncDataToGenerateInsight": {
+    "description": "AI insight empty state for trend cards."
+  },
+  "clinicalVitalsHistoryTitle": "Clinical Vitals History",
+  "@clinicalVitalsHistoryTitle": {
+    "description": "Vitals history summary banner title."
+  },
+  "recordsFound": "{count} {count, plural, =1{record} other{records}} found",
+  "@recordsFound": {
+    "description": "Record count summary.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "noVitalsHistoryFound": "No vitals history found",
+  "@noVitalsHistoryFound": {
+    "description": "Vitals history empty state."
+  },
+  "relatedRecordsTitle": "Related Records",
+  "@relatedRecordsTitle": {
+    "description": "Vitals history related records section title."
+  },
+  "historyDisclaimer": "For informational & wellness purposes only. Not a medical device. Does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional.",
+  "@historyDisclaimer": {
+    "description": "Vitals history disclaimer banner text."
+  },
+  "noDataAvailable": "No data available",
+  "@noDataAvailable": {
+    "description": "Generic data card empty state."
+  },
+  "moreRecords": "+ {count} more records",
+  "@moreRecords": {
+    "description": "Additional hidden record count label.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "4"
+      }
+    }
+  },
+  "labTestsTitle": "Lab Tests",
+  "@labTestsTitle": {
+    "description": "Related records card title for lab tests."
+  },
+  "ecgTitle": "ECG",
+  "@ecgTitle": {
+    "description": "Related records card title for ECG."
+  },
+  "glucoseWellnessTitle": "Glucose Wellness",
+  "@glucoseWellnessTitle": {
+    "description": "Related records card title for glucose wellness."
+  },
+  "heartHealthIndicatorsTitle": "Heart Health Indicators",
+  "@heartHealthIndicatorsTitle": {
+    "description": "Related records card title for heart disease indicators."
+  },
+  "strokeRiskIndicatorsTitle": "Stroke Risk Indicators",
+  "@strokeRiskIndicatorsTitle": {
+    "description": "Related records card title for stroke risk indicators."
+  },
+  "clinicalRecordsTitle": "Clinical Records",
+  "@clinicalRecordsTitle": {
+    "description": "Related records card title for diagnosis records."
+  },
+  "vitalSignsTitle": "Vital Signs",
+  "@vitalSignsTitle": {
+    "description": "Vitals screen title."
+  },
+  "syncingAppleWatch": "Syncing from Apple Watch...",
+  "@syncingAppleWatch": {
+    "description": "Vitals sync loading banner text."
+  },
+  "vitalsSyncIssue": "Data sync issue: Heart rate recorded as 0 BPM. Wearable may not be syncing correctly.",
+  "@vitalsSyncIssue": {
+    "description": "Vitals warning banner shown for suspicious wearable sync data."
+  },
+  "deviceManagerTooltip": "Device Manager",
+  "@deviceManagerTooltip": {
+    "description": "Tooltip for opening the device manager from the vitals screen."
+  },
+  "syncFromAppleWatchTooltip": "Sync from Apple Watch",
+  "@syncFromAppleWatchTooltip": {
+    "description": "Tooltip for syncing Apple Watch data."
+  },
+  "logVitalsManuallyTooltip": "Log Vitals manually",
+  "@logVitalsManuallyTooltip": {
+    "description": "Tooltip for opening the manual vitals sheet."
+  },
+  "syncingShort": "Syncing...",
+  "@syncingShort": {
+    "description": "Short loading label while syncing wearable data."
+  },
+  "syncAppleWatchButton": "Sync Apple Watch",
+  "@syncAppleWatchButton": {
+    "description": "Floating action button label for Apple Watch sync."
+  },
+  "logVitalsTitle": "Log Vitals to eHospital",
+  "@logVitalsTitle": {
+    "description": "Manual vitals bottom sheet title."
+  },
+  "wearableVitalsEndpointLabel": "POST -> /table/wearable_vitals",
+  "@wearableVitalsEndpointLabel": {
+    "description": "Manual vitals sheet endpoint helper label."
+  },
+  "heartRateBpmLabel": "Heart Rate (bpm)",
+  "@heartRateBpmLabel": {
+    "description": "Manual vitals field label for heart rate."
+  },
+  "stepsInputLabel": "Steps",
+  "@stepsInputLabel": {
+    "description": "Manual vitals field label for steps."
+  },
+  "caloriesInputLabel": "Calories",
+  "@caloriesInputLabel": {
+    "description": "Manual vitals field label for calories."
+  },
+  "sleepHoursInputLabel": "Sleep (hrs)",
+  "@sleepHoursInputLabel": {
+    "description": "Manual vitals field label for sleep hours."
+  },
+  "sendingButton": "Sending...",
+  "@sendingButton": {
+    "description": "Button label while sending manual vitals."
+  },
+  "sendToEHospitalButton": "Send to eHospital",
+  "@sendToEHospitalButton": {
+    "description": "Button label for sending manual vitals to eHospital."
+  },
+  "enterAtLeastOneValue": "Enter at least one value",
+  "@enterAtLeastOneValue": {
+    "description": "Validation snackbar when all manual vitals fields are empty."
+  },
+  "vitalsSavedMessage": "Vitals saved to eHospital DB",
+  "@vitalsSavedMessage": {
+    "description": "Snackbar after manual vitals are saved."
+  },
+  "clinicalReferenceTitle": "Clinical Reference",
+  "@clinicalReferenceTitle": {
+    "description": "Vitals clinical reference card title."
+  },
+  "eHospitalSourceLabel": "eHospital",
+  "@eHospitalSourceLabel": {
+    "description": "Short eHospital source label."
+  },
+  "ecgShortLabel": "ECG",
+  "@ecgShortLabel": {
+    "description": "Short ECG label."
+  },
+  "bloodPressureLabel": "Blood Pressure",
+  "@bloodPressureLabel": {
+    "description": "Blood pressure metric label."
+  },
+  "normalRangeLabel": "Normal range",
+  "@normalRangeLabel": {
+    "description": "Metric chart normal range label."
+  },
+  "latestMetricLabel": "Latest",
+  "@latestMetricLabel": {
+    "description": "Metric chart latest statistic label."
+  },
+  "averageMetricLabel": "Average",
+  "@averageMetricLabel": {
+    "description": "Metric chart average statistic label."
+  },
+  "minMetricLabel": "Min",
+  "@minMetricLabel": {
+    "description": "Metric chart minimum statistic label."
+  },
+  "maxMetricLabel": "Max",
+  "@maxMetricLabel": {
+    "description": "Metric chart maximum statistic label."
+  },
+  "noDataStatusLabel": "No Data",
+  "@noDataStatusLabel": {
+    "description": "Metric status when no value is available."
+  },
+  "lowStatusLabel": "Low",
+  "@lowStatusLabel": {
+    "description": "Metric status below normal range."
+  },
+  "highStatusLabel": "High",
+  "@highStatusLabel": {
+    "description": "Metric status above normal range."
+  },
+  "normalStatusLabel": "Normal",
+  "@normalStatusLabel": {
+    "description": "Metric status within normal range."
+  },
+  "stepsMetricDescription": "Steps walked today. A healthy goal is 10,000 steps per day.",
+  "@stepsMetricDescription": {
+    "description": "Vitals chart description for steps."
+  },
+  "caloriesMetricDescription": "Active calories burned. Healthy range: 300-800 kcal/day.",
+  "@caloriesMetricDescription": {
+    "description": "Vitals chart description for calories."
+  },
+  "heartRateMetricDescription": "Heart rate in beats per minute. Normal resting: 60-100 bpm.",
+  "@heartRateMetricDescription": {
+    "description": "Vitals chart description for heart rate."
+  },
+  "sleepMetricDescription": "Hours of sleep recorded. Recommended: 7-9 hours per night.",
+  "@sleepMetricDescription": {
+    "description": "Vitals chart description for sleep."
+  },
+  "clinicalBaselineNote": "Green dashed line = clinical baseline HR from hospital records.",
+  "@clinicalBaselineNote": {
+    "description": "Vitals chart note for the clinical heart-rate baseline."
+  },
+  "wearableSleepMissingNote": "0 hrs means the wearable did not record sleep for that period.",
+  "@wearableSleepMissingNote": {
+    "description": "Vitals chart note for missing wearable sleep data."
+  },
+  "refreshTooltip": "Refresh",
+  "@refreshTooltip": {
+    "description": "Generic refresh tooltip."
+  },
+  "unifiedHealthAnalysisTitle": "Unified Health Analysis",
+  "@unifiedHealthAnalysisTitle": {
+    "description": "Insights header title."
+  },
+  "unifiedHealthAnalysisSubtitle": "Wearable + clinical data - timestamp merged",
+  "@unifiedHealthAnalysisSubtitle": {
+    "description": "Insights header subtitle."
+  },
+  "mergedRecordPairs": "{count} wearable-clinical record pairs merged (+/-48h window)",
+  "@mergedRecordPairs": {
+    "description": "Insights merged record count badge.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "12"
+      }
+    }
+  },
+  "insightsFound": "{count} {count, plural, =1{Insight} other{Insights}} Found",
+  "@insightsFound": {
+    "description": "Insights count heading.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "insightsMedicalFooter": "IMPORTANT: This app is for informational and wellness purposes only. It is not a medical device and does not provide medical advice, diagnosis, or treatment. All wellness indicators and risk scores are for general awareness only. Always consult a qualified healthcare professional before making any health-related decisions.",
+  "@insightsMedicalFooter": {
+    "description": "Final medical disclaimer footer on the insights screen."
+  },
+  "insightsDisclaimer": "For informational & wellness purposes only. Not a medical device. Does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional.",
+  "@insightsDisclaimer": {
+    "description": "Short disclaimer banner on insights and history screens."
+  },
+  "clinicalSummaryTitle": "Patient Clinical Summary",
+  "@clinicalSummaryTitle": {
+    "description": "Insights clinical summary section title."
+  },
+  "clinicalVitalsMostRecent": "Clinical Vitals (Most Recent)",
+  "@clinicalVitalsMostRecent": {
+    "description": "Insights clinical summary subsection title."
+  },
+  "wearableActivityMostRecent": "Wearable Activity (Most Recent)",
+  "@wearableActivityMostRecent": {
+    "description": "Insights wearable summary subsection title."
+  },
+  "noteLabel": "Note: {note}",
+  "@noteLabel": {
+    "description": "Dynamic note label.",
+    "placeholders": {
+      "note": {
+        "type": "String",
+        "example": "Patient reported fatigue"
+      }
+    }
+  }
+}

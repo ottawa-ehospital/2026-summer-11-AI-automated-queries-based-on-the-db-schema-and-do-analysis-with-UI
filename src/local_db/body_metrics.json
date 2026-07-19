@@ -1,0 +1,68 @@
+[
+  {
+    "metric_id": "bm_001",
+    "user_id": "u_001",
+    "recorded_date": "2016-05-03",
+    "height_m": 1.71,
+    "weight_kg": 52.6,
+    "bmi": 17.99,
+    "fat_percentage": 12.6,
+    "blood_pressure": "126/83",
+    "resting_bpm": 60
+  },
+  {
+    "metric_id": "bm_002",
+    "user_id": "u_002",
+    "recorded_date": "2016-05-12",
+    "height_m": 2.0,
+    "weight_kg": 94.5,
+    "bmi": 23.62,
+    "fat_percentage": 27.6,
+    "blood_pressure": "120/80",
+    "resting_bpm": 69
+  },
+  {
+    "metric_id": "bm_003",
+    "user_id": "u_003",
+    "recorded_date": "2016-05-12",
+    "height_m": 1.8,
+    "weight_kg": 65.2,
+    "bmi": 20.12,
+    "fat_percentage": 27.2,
+    "blood_pressure": "120/80",
+    "resting_bpm": 68
+  },
+  {
+    "metric_id": "bm_004",
+    "user_id": "u_004",
+    "recorded_date": "2016-05-12",
+    "height_m": 1.6,
+    "weight_kg": 45.5,
+    "bmi": 17.77,
+    "fat_percentage": 21.7,
+    "blood_pressure": "125/80",
+    "resting_bpm": 64
+  },
+  {
+    "metric_id": "bm_005",
+    "user_id": "u_005",
+    "recorded_date": "2016-04-13",
+    "height_m": 1.89,
+    "weight_kg": 133.5,
+    "bmi": 37.37,
+    "fat_percentage": 27.4,
+    "blood_pressure": "120/80",
+    "resting_bpm": 58
+  },
+  {
+    "metric_id": "bm_006",
+    "user_id": "u_006",
+    "recorded_date": "2016-05-12",
+    "height_m": 1.61,
+    "weight_kg": 67.1,
+    "bmi": 25.89,
+    "fat_percentage": 33.4,
+    "blood_pressure": "125/80",
+    "resting_bpm": 74
+  }
+]

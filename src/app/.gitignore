@@ -1,0 +1,6 @@
+build/
+build/
+.dart_tool/
+ios/Pods/
+dart_defines.json
+*.local.json
