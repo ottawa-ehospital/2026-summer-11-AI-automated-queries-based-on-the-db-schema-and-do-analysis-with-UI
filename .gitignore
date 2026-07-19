@@ -11,6 +11,13 @@ __pycache__/
 .python-version
 src/db_dump/
 
+# Generated demo outputs and local analysis scratch files
+agent_graph.png
+src/app/Patient_*_Integrated_Data.csv
+src/app/steps_trend.png
+src/app/mvp.ipynb
+src/app/readme2.md
+
 
 # Virtual environments
 .venv/
@@ -55,4 +62,3 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
-
