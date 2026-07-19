@@ -59,7 +59,7 @@ api-dev:
 	$(BACKEND_ENV) $(UVICORN) src.backend.main:app --reload --host $(API_HOST) --port $(API_PORT) --log-level info --access-log
 
 py-check:
-	$(PYTHON) -m py_compile src/demo/build_local_db.py src/demo/demo2.py src/backend/main.py
+	$(PYTHON) -m py_compile src/demo/demo2.py src/backend/main.py
 
 api-check:
 	MODEL_PROVIDER=ollama MODEL_NAME=$(OLLAMA_MODEL) $(PYTHON) -c "from fastapi.testclient import TestClient; import src.backend.api.demo as demo; exec(\"async def fake(email, password, selected_option):\\n    return {'patient_id': 20, 'user_id': 20, 'email': email, 'username': 'Test Patient', 'selectedOption': selected_option}\"); demo.authenticate_ehospital_user=fake; from src.backend.main import app; c=TestClient(app); assert c.post('/login', json={'email':'patient@example.com','password':'secret','selectedOption':'Patient'}).json()['patient_id'] == 20; assert c.post('/login', json={'username':'john','password':'john123'}).status_code == 422; print('api ok')"

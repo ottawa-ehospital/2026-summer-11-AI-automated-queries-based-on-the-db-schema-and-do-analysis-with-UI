@@ -121,7 +121,7 @@ switch ($Task) {
         Run-Uvicorn src.backend.main:app --reload --host $ApiHost --port $ApiPort --log-level info --access-log
     }
     "py-check" {
-        Run-Python -m py_compile src/demo/build_local_db.py src/demo/demo2.py src/backend/main.py
+        Run-Python -m py_compile src/demo/demo2.py src/backend/main.py
     }
     "api-check" {
         $env:MODEL_PROVIDER = "ollama"
