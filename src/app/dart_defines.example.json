@@ -1,0 +1,11 @@
+{
+  "AI_PROVIDER": "ollama",
+  "BACKEND_BASE_URL": "http://127.0.0.1:8080",
+  "EHOSPITAL_BASE_URL": "https://aetab8pjmb.us-east-1.awsapprunner.com",
+  "OLLAMA_BASE_URL": "http://127.0.0.1:11434",
+  "OLLAMA_MODEL": "llama3.1:8b",
+  "GEMINI_API_KEY": "replace-with-your-gemini-api-key",
+  "GEMINI_MODEL": "gemini-1.5-flash",
+  "FITBIT_CLIENT_ID": "replace-with-your-fitbit-client-id",
+  "FITBIT_CLIENT_SECRET": "replace-with-your-fitbit-client-secret"
+}

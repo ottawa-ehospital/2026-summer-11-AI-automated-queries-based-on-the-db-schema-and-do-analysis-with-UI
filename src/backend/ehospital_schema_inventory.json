@@ -1,0 +1,1280 @@
+{
+  "count": 72,
+  "generated_at": "2026-06-03T07:20:24.532996+00:00",
+  "source": "ehospital:/tables",
+  "tables": [
+    {
+      "attributes": [
+        "record_id",
+        "patient_id",
+        "disease_type",
+        "prediction",
+        "confidence_score",
+        "created_at"
+      ],
+      "modelName": "AiDiagnostics",
+      "name": "ai_diagnostics",
+      "primaryKeys": [
+        "record_id"
+      ],
+      "qualifiedName": "ai_diagnostics"
+    },
+    {
+      "attributes": [
+        "reaction_id",
+        "allergy_record_id",
+        "reaction_description",
+        "reaction_date"
+      ],
+      "modelName": "AllergyReaction",
+      "name": "allergy_reaction",
+      "primaryKeys": [
+        "reaction_id"
+      ],
+      "qualifiedName": "allergy_reaction"
+    },
+    {
+      "attributes": [
+        "record_id",
+        "patient_id",
+        "allergen",
+        "severity",
+        "recorded_on"
+      ],
+      "modelName": "AllergyRecords",
+      "name": "allergy_records",
+      "primaryKeys": [
+        "record_id"
+      ],
+      "qualifiedName": "allergy_records"
+    },
+    {
+      "attributes": [
+        "record_id",
+        "patient_id",
+        "memory_loss_score",
+        "risk_level",
+        "diagnosis_date"
+      ],
+      "modelName": "Alzheimer",
+      "name": "alzheimer",
+      "primaryKeys": [
+        "record_id"
+      ],
+      "qualifiedName": "alzheimer"
+    },
+    {
+      "attributes": [
+        "log_id",
+        "patient_id",
+        "logged_at",
+        "image_storage_path",
+        "identified_foods",
+        "estimated_portions",
+        "calories",
+        "protein_g",
+        "fat_g",
+        "carbohydrates_g",
+        "sodium_mg",
+        "sugar_g",
+        "insight_risk",
+        "insight_warning",
+        "insight_positive",
+        "ingredients_list"
+      ],
+      "modelName": "AppNutritionLog",
+      "name": "app_nutrition_log",
+      "primaryKeys": [
+        "log_id"
+      ],
+      "qualifiedName": "app_nutrition_log"
+    },
+    {
+      "attributes": [
+        "appointment_id",
+        "patient_id",
+        "doctor_id",
+        "datetime",
+        "status"
+      ],
+      "modelName": "Appointments",
+      "name": "appointments",
+      "primaryKeys": [
+        "appointment_id"
+      ],
+      "qualifiedName": "appointments"
+    },
+    {
+      "attributes": [
+        "log_id",
+        "user_id",
+        "action",
+        "table_name",
+        "record_id",
+        "timestamp"
+      ],
+      "modelName": "AuditLog",
+      "name": "audit_log",
+      "primaryKeys": [
+        "log_id"
+      ],
+      "qualifiedName": "audit_log"
+    },
+    {
+      "attributes": [
+        "billing_id",
+        "patient_id",
+        "appointment_id",
+        "amount",
+        "billing_date",
+        "status",
+        "bill_type"
+      ],
+      "modelName": "BillingRecords",
+      "name": "billing_records",
+      "primaryKeys": [
+        "billing_id"
+      ],
+      "qualifiedName": "billing_records"
+    },
+    {
+      "attributes": [
+        "billing_id",
+        "service_code"
+      ],
+      "modelName": "BillingServices",
+      "name": "billing_services",
+      "primaryKeys": [
+        "billing_id",
+        "service_code"
+      ],
+      "qualifiedName": "billing_services"
+    },
+    {
+      "attributes": [
+        "bloodtest_id",
+        "patient_id",
+        "test_name",
+        "result_value",
+        "unit",
+        "normal_range",
+        "test_date"
+      ],
+      "modelName": "Bloodtests",
+      "name": "bloodtests",
+      "primaryKeys": [
+        "bloodtest_id"
+      ],
+      "qualifiedName": "bloodtests"
+    },
+    {
+      "attributes": [
+        "case_id",
+        "patient_id",
+        "tumor_size",
+        "diagnosis_stage"
+      ],
+      "modelName": "BreastCancerDetails",
+      "name": "breast_cancer_details",
+      "primaryKeys": [
+        "case_id"
+      ],
+      "qualifiedName": "breast_cancer_details"
+    },
+    {
+      "attributes": [
+        "chat_id",
+        "patient_id",
+        "started_at",
+        "ended_at"
+      ],
+      "modelName": "ChatTable",
+      "name": "chat_table",
+      "primaryKeys": [
+        "chat_id"
+      ],
+      "qualifiedName": "chat_table"
+    },
+    {
+      "attributes": [
+        "conversation_id",
+        "chat_id",
+        "message",
+        "response",
+        "timestamp"
+      ],
+      "modelName": "ChatbotConversation",
+      "name": "chatbot_conversation",
+      "primaryKeys": [
+        "conversation_id"
+      ],
+      "qualifiedName": "chatbot_conversation"
+    },
+    {
+      "attributes": [
+        "chat_id",
+        "patient_id",
+        "session_id",
+        "start_time"
+      ],
+      "modelName": "ChatbotPatients",
+      "name": "chatbot_patients",
+      "primaryKeys": [
+        "chat_id"
+      ],
+      "qualifiedName": "chatbot_patients"
+    },
+    {
+      "attributes": [
+        "ticket_id",
+        "clinic_id",
+        "issue_description",
+        "submitted_by"
+      ],
+      "modelName": "ClinicHelp",
+      "name": "clinic_help",
+      "primaryKeys": [
+        "ticket_id"
+      ],
+      "qualifiedName": "clinic_help"
+    },
+    {
+      "attributes": [
+        "record_id",
+        "clinic_id",
+        "authorized_by",
+        "authorized_on"
+      ],
+      "modelName": "ClinicRecordauthorized",
+      "name": "clinic_recordauthorized",
+      "primaryKeys": [
+        "record_id"
+      ],
+      "qualifiedName": "clinic_recordauthorized"
+    },
+    {
+      "attributes": [
+        "clinic_id",
+        "clinic_name",
+        "location",
+        "active"
+      ],
+      "modelName": "ClinicServicehistory",
+      "name": "clinic_servicehistory",
+      "primaryKeys": [
+        "clinic_id"
+      ],
+      "qualifiedName": "clinic_servicehistory"
+    },
+    {
+      "attributes": [
+        "hub_id",
+        "staff_id",
+        "summary"
+      ],
+      "modelName": "ClinicalStaffMessageHub",
+      "name": "clinical_staff_message_hub",
+      "primaryKeys": [
+        "hub_id"
+      ],
+      "qualifiedName": "clinical_staff_message_hub"
+    },
+    {
+      "attributes": [
+        "staff_id",
+        "name",
+        "role",
+        "email",
+        "clinic_id"
+      ],
+      "modelName": "ClinicalStaffRegistration",
+      "name": "clinical_staff_registration",
+      "primaryKeys": [
+        "staff_id"
+      ],
+      "qualifiedName": "clinical_staff_registration"
+    },
+    {
+      "attributes": [
+        "task_id",
+        "assigned_to",
+        "task_description",
+        "status",
+        "deadline"
+      ],
+      "modelName": "ClinicalStaffTasks",
+      "name": "clinical_staff_tasks",
+      "primaryKeys": [
+        "task_id"
+      ],
+      "qualifiedName": "clinical_staff_tasks"
+    },
+    {
+      "attributes": [
+        "trial_id",
+        "title",
+        "status",
+        "start_date",
+        "end_date"
+      ],
+      "modelName": "ClinicalTrials",
+      "name": "clinical_trials",
+      "primaryKeys": [
+        "trial_id"
+      ],
+      "qualifiedName": "clinical_trials"
+    },
+    {
+      "attributes": [
+        "entry_id",
+        "trial_id",
+        "patient_id",
+        "enrolled_on"
+      ],
+      "modelName": "ClinicaltrialsPatients",
+      "name": "clinicaltrials_patients",
+      "primaryKeys": [
+        "entry_id"
+      ],
+      "qualifiedName": "clinicaltrials_patients"
+    },
+    {
+      "attributes": [
+        "diabetes_id",
+        "patient_id",
+        "glucose_level",
+        "insulin",
+        "prediction"
+      ],
+      "modelName": "DiabetesAnalysis",
+      "name": "diabetes_analysis",
+      "primaryKeys": [
+        "diabetes_id"
+      ],
+      "qualifiedName": "diabetes_analysis"
+    },
+    {
+      "attributes": [
+        "diagnosis_id",
+        "patient_id",
+        "doctor_id",
+        "diagnosis_code",
+        "diagnosis_description",
+        "diagnosis_date"
+      ],
+      "modelName": "Diagnosis",
+      "name": "diagnosis",
+      "primaryKeys": [
+        "diagnosis_id"
+      ],
+      "qualifiedName": "diagnosis"
+    },
+    {
+      "attributes": [
+        "task_id",
+        "doctor_id",
+        "description",
+        "status",
+        "due_date"
+      ],
+      "modelName": "DoctorTasks",
+      "name": "doctor_tasks",
+      "primaryKeys": [
+        "task_id"
+      ],
+      "qualifiedName": "doctor_tasks"
+    },
+    {
+      "attributes": [
+        "message_id",
+        "doctor_id",
+        "patient_id",
+        "message",
+        "sent_at"
+      ],
+      "modelName": "DoctorToPatientMessage",
+      "name": "doctor_to_patient_message",
+      "primaryKeys": [
+        "message_id"
+      ],
+      "qualifiedName": "doctor_to_patient_message"
+    },
+    {
+      "attributes": [
+        "ticket_id",
+        "doctor_id",
+        "issue",
+        "submitted_on"
+      ],
+      "modelName": "DoctorsHelp",
+      "name": "doctors_help",
+      "primaryKeys": [
+        "ticket_id"
+      ],
+      "qualifiedName": "doctors_help"
+    },
+    {
+      "attributes": [
+        "doctor_id",
+        "name",
+        "specialty",
+        "clinic_id",
+        "license_number",
+        "email",
+        "phone_number",
+        "address",
+        "hospital_name"
+      ],
+      "modelName": "DoctorsRegistration",
+      "name": "doctors_registration",
+      "primaryKeys": [
+        "doctor_id"
+      ],
+      "qualifiedName": "doctors_registration"
+    },
+    {
+      "attributes": [
+        "ecg_id",
+        "patient_id",
+        "ecg_result",
+        "recorded_on",
+        "comments"
+      ],
+      "modelName": "Ecg",
+      "name": "ecg",
+      "primaryKeys": [
+        "ecg_id"
+      ],
+      "qualifiedName": "ecg"
+    },
+    {
+      "attributes": [
+        "eye_test_id",
+        "patient_id",
+        "test_type",
+        "result",
+        "vision_metric",
+        "vision_score",
+        "test_date",
+        "comments"
+      ],
+      "modelName": "EyeTest",
+      "name": "eye_test",
+      "primaryKeys": [
+        "eye_test_id"
+      ],
+      "qualifiedName": "eye_test"
+    },
+    {
+      "attributes": [
+        "history_id",
+        "patient_id",
+        "relation",
+        "condition",
+        "notes"
+      ],
+      "modelName": "FamilyHistory",
+      "name": "family_history",
+      "primaryKeys": [
+        "history_id"
+      ],
+      "qualifiedName": "family_history"
+    },
+    {
+      "attributes": [
+        "analysis_id",
+        "patient_id",
+        "cholesterol",
+        "resting_bp",
+        "age",
+        "sex",
+        "risk_score",
+        "prediction",
+        "analyzed_on",
+        "model_version",
+        "comments"
+      ],
+      "modelName": "HeartDiseaseAnalysis",
+      "name": "heart_disease_analysis",
+      "primaryKeys": [
+        "analysis_id"
+      ],
+      "qualifiedName": "heart_disease_analysis"
+    },
+    {
+      "attributes": [
+        "admin_id",
+        "name",
+        "email",
+        "role",
+        "hospital_id",
+        "created_on",
+        "status",
+        "last_login",
+        "auth_level",
+        "password_hash"
+      ],
+      "modelName": "HospitalAdmin",
+      "name": "hospital_admin",
+      "primaryKeys": [
+        "admin_id"
+      ],
+      "qualifiedName": "hospital_admin"
+    },
+    {
+      "attributes": [
+        "record_id",
+        "hospital_id",
+        "patient_id",
+        "authorized_by",
+        "reason",
+        "access_level",
+        "expires_on",
+        "status",
+        "authorized_on"
+      ],
+      "modelName": "HospitalRecordauthorized",
+      "name": "hospital_recordauthorized",
+      "primaryKeys": [
+        "record_id"
+      ],
+      "qualifiedName": "hospital_recordauthorized"
+    },
+    {
+      "attributes": [
+        "service_id",
+        "hospital_id",
+        "description",
+        "service_type",
+        "logged_by",
+        "status",
+        "priority",
+        "resolved_on",
+        "date_logged"
+      ],
+      "modelName": "HospitalServicehistory",
+      "name": "hospital_servicehistory",
+      "primaryKeys": [
+        "service_id"
+      ],
+      "qualifiedName": "hospital_servicehistory"
+    },
+    {
+      "attributes": [
+        "incident_id",
+        "user_id",
+        "incident_file",
+        "incident_punishment",
+        "created_at"
+      ],
+      "modelName": "Incidents",
+      "name": "incidents",
+      "primaryKeys": [
+        "incident_id"
+      ],
+      "qualifiedName": "incidents"
+    },
+    {
+      "attributes": [
+        "claim_id",
+        "patient_id",
+        "billing_id",
+        "insurance_provider",
+        "claim_amount",
+        "approved_amount",
+        "claim_status",
+        "submitted_on",
+        "processed_on",
+        "payment_status",
+        "reference_number",
+        "notes"
+      ],
+      "modelName": "InsuranceClaims",
+      "name": "insurance_claims",
+      "primaryKeys": [
+        "claim_id"
+      ],
+      "qualifiedName": "insurance_claims"
+    },
+    {
+      "attributes": [
+        "lab_id",
+        "name",
+        "email",
+        "phone_number",
+        "address",
+        "license_no",
+        "status",
+        "registered_on"
+      ],
+      "modelName": "LabRegistration",
+      "name": "lab_registration",
+      "primaryKeys": [
+        "lab_id"
+      ],
+      "qualifiedName": "lab_registration"
+    },
+    {
+      "attributes": [
+        "lab_test_id",
+        "patient_id",
+        "ordered_by",
+        "test_type",
+        "lab_location",
+        "status",
+        "sample_type",
+        "result",
+        "comments",
+        "test_date",
+        "uploaded_on"
+      ],
+      "modelName": "LabTests",
+      "name": "lab_tests",
+      "primaryKeys": [
+        "lab_test_id"
+      ],
+      "qualifiedName": "lab_tests"
+    },
+    {
+      "attributes": [
+        "analysis_id",
+        "patient_id",
+        "analysis_date",
+        "run_by",
+        "model_version",
+        "status",
+        "followup_needed",
+        "stage",
+        "probability",
+        "comments"
+      ],
+      "modelName": "LungCancerAnalysis",
+      "name": "lung_cancer_analysis",
+      "primaryKeys": [
+        "analysis_id"
+      ],
+      "qualifiedName": "lung_cancer_analysis"
+    },
+    {
+      "attributes": [
+        "history_id",
+        "patient_id",
+        "diagnosed_by",
+        "condition",
+        "status",
+        "severity",
+        "diagnosis_date",
+        "notes",
+        "treatment_given",
+        "followup_required",
+        "last_updated"
+      ],
+      "modelName": "MedicalHistory",
+      "name": "medical_history",
+      "primaryKeys": [
+        "history_id"
+      ],
+      "qualifiedName": "medical_history"
+    },
+    {
+      "attributes": [
+        "medicine_id",
+        "name",
+        "description",
+        "dosage_form",
+        "strength",
+        "manufacturer",
+        "price",
+        "created_on",
+        "is_available"
+      ],
+      "modelName": "Medicines",
+      "name": "medicines",
+      "primaryKeys": [
+        "medicine_id"
+      ],
+      "qualifiedName": "medicines"
+    },
+    {
+      "attributes": [
+        "message_id",
+        "sender_id",
+        "patient_id",
+        "message",
+        "sent_at",
+        "status",
+        "is_urgent",
+        "delivered_at",
+        "reply_to"
+      ],
+      "modelName": "MessageClinicalstaffToPat",
+      "name": "message_clinicalstaff_to_pat",
+      "primaryKeys": [
+        "message_id"
+      ],
+      "qualifiedName": "message_clinicalstaff_to_pat"
+    },
+    {
+      "attributes": [
+        "message_id",
+        "doctor_id",
+        "patient_id",
+        "message",
+        "sent_at",
+        "status",
+        "is_urgent",
+        "delivered_at",
+        "reply_to",
+        "attachment_url"
+      ],
+      "modelName": "MessageDoctorToPat",
+      "name": "message_doctor_to_pat",
+      "primaryKeys": [
+        "message_id"
+      ],
+      "qualifiedName": "message_doctor_to_pat"
+    },
+    {
+      "attributes": [
+        "message_id",
+        "patient_id",
+        "receiver_id",
+        "message",
+        "sent_at",
+        "status",
+        "is_urgent",
+        "delivered_at",
+        "reply_to"
+      ],
+      "modelName": "MessagePatToClinicalstaff",
+      "name": "message_pat_to_clinicalstaff",
+      "primaryKeys": [
+        "message_id"
+      ],
+      "qualifiedName": "message_pat_to_clinicalstaff"
+    },
+    {
+      "attributes": [
+        "message_id",
+        "patient_id",
+        "doctor_id",
+        "message",
+        "sent_at",
+        "status",
+        "is_urgent",
+        "delivered_at",
+        "reply_to",
+        "attachment_url"
+      ],
+      "modelName": "MessagePatToDoctor",
+      "name": "message_pat_to_doctor",
+      "primaryKeys": [
+        "message_id"
+      ],
+      "qualifiedName": "message_pat_to_doctor"
+    },
+    {
+      "attributes": [
+        "reset_id",
+        "user_id",
+        "requested_at",
+        "token",
+        "expires_at",
+        "used",
+        "used_at"
+      ],
+      "modelName": "PasswordResets",
+      "name": "password_resets",
+      "primaryKeys": [
+        "reset_id"
+      ],
+      "qualifiedName": "password_resets"
+    },
+    {
+      "attributes": [
+        "id",
+        "patient_id",
+        "treatment",
+        "feedback",
+        "datetime",
+        "is_severe",
+        "feedback_type"
+      ],
+      "modelName": "PatientFeedback",
+      "name": "patient_feedback",
+      "primaryKeys": [
+        "id"
+      ],
+      "qualifiedName": "patient_feedback"
+    },
+    {
+      "attributes": [
+        "hub_id",
+        "patient_id",
+        "summary",
+        "last_updated",
+        "message_count",
+        "status"
+      ],
+      "modelName": "PatientMessageHub",
+      "name": "patient_message_hub",
+      "primaryKeys": [
+        "hub_id"
+      ],
+      "qualifiedName": "patient_message_hub"
+    },
+    {
+      "attributes": [
+        "preference_id",
+        "patient_id",
+        "preference_type",
+        "pharmacy_id",
+        "lab_id",
+        "notes"
+      ],
+      "modelName": "PatientPreference",
+      "name": "patient_preference",
+      "primaryKeys": [
+        "preference_id"
+      ],
+      "qualifiedName": "patient_preference"
+    },
+    {
+      "attributes": [
+        "category_id",
+        "name",
+        "description",
+        "created_on",
+        "status"
+      ],
+      "modelName": "PatientsOutcomeCategory",
+      "name": "patients_outcome_category",
+      "primaryKeys": [
+        "category_id"
+      ],
+      "qualifiedName": "patients_outcome_category"
+    },
+    {
+      "attributes": [
+        "domain_id",
+        "category_id",
+        "name",
+        "description"
+      ],
+      "modelName": "PatientsOutcomeDomain",
+      "name": "patients_outcome_domain",
+      "primaryKeys": [
+        "domain_id"
+      ],
+      "qualifiedName": "patients_outcome_domain"
+    },
+    {
+      "attributes": [
+        "measure_id",
+        "patient_id",
+        "domain_id",
+        "type_id",
+        "score",
+        "assessment_date",
+        "notes"
+      ],
+      "modelName": "PatientsOutcomeMeasure",
+      "name": "patients_outcome_measure",
+      "primaryKeys": [
+        "measure_id"
+      ],
+      "qualifiedName": "patients_outcome_measure"
+    },
+    {
+      "attributes": [
+        "detail_id",
+        "measure_id",
+        "attribute_name",
+        "value"
+      ],
+      "modelName": "PatientsOutcomeMeasureDetail",
+      "name": "patients_outcome_measure_detail",
+      "primaryKeys": [
+        "detail_id"
+      ],
+      "qualifiedName": "patients_outcome_measure_detail"
+    },
+    {
+      "attributes": [
+        "type_id",
+        "name",
+        "description"
+      ],
+      "modelName": "PatientsOutcomeMeasureType",
+      "name": "patients_outcome_measure_type",
+      "primaryKeys": [
+        "type_id"
+      ],
+      "qualifiedName": "patients_outcome_measure_type"
+    },
+    {
+      "attributes": [
+        "patient_id",
+        "name",
+        "dob",
+        "gender",
+        "contact_info",
+        "phone_number",
+        "OHIP_code",
+        "private_insurance_name",
+        "private_insurance_id",
+        "weight_kg",
+        "height_cm",
+        "family_doctor_id"
+      ],
+      "modelName": "PatientsRegistration",
+      "name": "patients_registration",
+      "primaryKeys": [
+        "patient_id"
+      ],
+      "qualifiedName": "patients_registration"
+    },
+    {
+      "attributes": [
+        "company_id",
+        "name",
+        "contact_email",
+        "phone_number",
+        "address",
+        "country",
+        "status",
+        "created_on"
+      ],
+      "modelName": "PharmaceuticalCompany",
+      "name": "pharmaceutical_company",
+      "primaryKeys": [
+        "company_id"
+      ],
+      "qualifiedName": "pharmaceutical_company"
+    },
+    {
+      "attributes": [
+        "pharmacy_id",
+        "name",
+        "email",
+        "phone_number",
+        "address",
+        "license_no",
+        "status",
+        "registered_on"
+      ],
+      "modelName": "PharmacyRegistration",
+      "name": "pharmacy_registration",
+      "primaryKeys": [
+        "pharmacy_id"
+      ],
+      "qualifiedName": "pharmacy_registration"
+    },
+    {
+      "attributes": [
+        "prescription_id",
+        "patient_id",
+        "doctor_id",
+        "medicine_name",
+        "dosage",
+        "start_date",
+        "end_date",
+        "notes",
+        "issued_on",
+        "status"
+      ],
+      "modelName": "Prescription",
+      "name": "prescription",
+      "primaryKeys": [
+        "prescription_id"
+      ],
+      "qualifiedName": "prescription"
+    },
+    {
+      "attributes": [
+        "prescription_id",
+        "patient_id",
+        "prescriber_id",
+        "medication_name",
+        "medication_strength",
+        "medication_form",
+        "dosage_instructions",
+        "quantity",
+        "refills_allowed",
+        "date_prescribed",
+        "expiry_date",
+        "status",
+        "notes",
+        "pharmacy_id"
+      ],
+      "modelName": "PrescriptionForm",
+      "name": "prescription_form",
+      "primaryKeys": [
+        "prescription_id"
+      ],
+      "qualifiedName": "prescription_form"
+    },
+    {
+      "attributes": [
+        "requisition_id",
+        "patient_id",
+        "lab_id",
+        "department",
+        "test_type",
+        "test_code",
+        "clinical_info",
+        "date_requested",
+        "priority",
+        "status",
+        "result_date",
+        "notes"
+      ],
+      "modelName": "RequisitionForm",
+      "name": "requisition_form",
+      "primaryKeys": [
+        "requisition_id"
+      ],
+      "qualifiedName": "requisition_form"
+    },
+    {
+      "attributes": [
+        "filename",
+        "checksum",
+        "applied_at"
+      ],
+      "modelName": "SchemaMigrations",
+      "name": "schema_migrations",
+      "primaryKeys": [
+        "filename"
+      ],
+      "qualifiedName": "schema_migrations"
+    },
+    {
+      "attributes": [
+        "service_code",
+        "service_name",
+        "service_price",
+        "description",
+        "created_on"
+      ],
+      "modelName": "ServicesCatalog",
+      "name": "services_catalog",
+      "primaryKeys": [
+        "service_code"
+      ],
+      "qualifiedName": "services_catalog"
+    },
+    {
+      "attributes": [
+        "prediction_id",
+        "patient_id",
+        "risk_score",
+        "predicted_on",
+        "model_version",
+        "comments"
+      ],
+      "modelName": "StrokePrediction",
+      "name": "stroke_prediction",
+      "primaryKeys": [
+        "prediction_id"
+      ],
+      "qualifiedName": "stroke_prediction"
+    },
+    {
+      "attributes": [
+        "surgery_id",
+        "patient_id",
+        "surgery_type",
+        "surgery_date",
+        "surgeon_name",
+        "hospital_name",
+        "recovery_status",
+        "notes"
+      ],
+      "modelName": "SurgicalHistory",
+      "name": "surgical_history",
+      "primaryKeys": [
+        "surgery_id"
+      ],
+      "qualifiedName": "surgical_history"
+    },
+    {
+      "attributes": [
+        "tumor_id",
+        "patient_id",
+        "tumor_type",
+        "location",
+        "size_cm",
+        "diagnosed_on",
+        "status",
+        "notes"
+      ],
+      "modelName": "Tumor",
+      "name": "tumor",
+      "primaryKeys": [
+        "tumor_id"
+      ],
+      "qualifiedName": "tumor"
+    },
+    {
+      "attributes": [
+        "user_id",
+        "username",
+        "email",
+        "password_hash",
+        "role",
+        "created_on",
+        "status"
+      ],
+      "modelName": "Users",
+      "name": "users",
+      "primaryKeys": [
+        "user_id"
+      ],
+      "qualifiedName": "users"
+    },
+    {
+      "attributes": [
+        "vital_id",
+        "patient_id",
+        "blood_pressure",
+        "heart_rate",
+        "temperature",
+        "respiratory_rate",
+        "recorded_on",
+        "notes"
+      ],
+      "modelName": "VitalsHistory",
+      "name": "vitals_history",
+      "primaryKeys": [
+        "vital_id"
+      ],
+      "qualifiedName": "vitals_history"
+    },
+    {
+      "attributes": [
+        "vital_id",
+        "patient_id",
+        "heart_rate",
+        "steps",
+        "calories",
+        "sleep",
+        "timestamp",
+        "recorded_on",
+        "hrv_sdnn",
+        "resting_heart_rate",
+        "respiratory_rate",
+        "stress_score",
+        "annotation"
+      ],
+      "modelName": "WearableVitals",
+      "name": "wearable_vitals",
+      "primaryKeys": [
+        "vital_id"
+      ],
+      "qualifiedName": "wearable_vitals"
+    },
+    {
+      "attributes": [
+        "workout_id",
+        "patient_id",
+        "source_provider",
+        "source_workout_id",
+        "source_bundle_id",
+        "source_device_name",
+        "source_device_manufacturer",
+        "source_device_model",
+        "source_device_hardware_version",
+        "source_device_software_version",
+        "workout_type",
+        "workout_type_raw",
+        "apple_workout_activity_type",
+        "fitbit_activity_id",
+        "fitbit_activity_name",
+        "start_time",
+        "end_time",
+        "duration_seconds",
+        "timezone_offset_minutes",
+        "distance_meters",
+        "active_energy_kcal",
+        "basal_energy_kcal",
+        "total_energy_kcal",
+        "steps",
+        "flights_climbed",
+        "average_heart_rate_bpm",
+        "max_heart_rate_bpm",
+        "min_heart_rate_bpm",
+        "average_speed_mps",
+        "max_speed_mps",
+        "average_cadence_spm",
+        "elevation_gain_meters",
+        "has_route",
+        "route_source_workout_id",
+        "sync_anchor",
+        "sync_revision",
+        "deleted_at_source",
+        "first_synced_at",
+        "last_synced_at",
+        "source_metadata",
+        "raw_payload"
+      ],
+      "modelName": "WearableWorkouts",
+      "name": "wearable_workouts",
+      "primaryKeys": [
+        "workout_id"
+      ],
+      "qualifiedName": "wearable_workouts"
+    },
+    {
+      "attributes": [
+        "segment_id",
+        "workout_id",
+        "segment_type",
+        "segment_index",
+        "start_time",
+        "end_time",
+        "duration_seconds",
+        "distance_meters",
+        "active_energy_kcal",
+        "average_heart_rate_bpm",
+        "max_heart_rate_bpm",
+        "zone_name",
+        "zone_min_bpm",
+        "zone_max_bpm",
+        "source_metadata"
+      ],
+      "modelName": "WearableWorkoutSegments",
+      "name": "wearable_workout_segments",
+      "primaryKeys": [
+        "segment_id"
+      ],
+      "qualifiedName": "wearable_workout_segments"
+    },
+    {
+      "attributes": [
+        "patient_id",
+        "night",
+        "deep_minutes",
+        "rem_minutes",
+        "core_minutes",
+        "light_minutes",
+        "awake_minutes",
+        "asleep_minutes",
+        "in_bed_minutes",
+        "spo2_avg",
+        "spo2_min",
+        "hr_avg",
+        "hr_min",
+        "source",
+        "updated_at"
+      ],
+      "modelName": "SleepNights",
+      "name": "sleep_nights",
+      "primaryKeys": [
+        "patient_id",
+        "night"
+      ],
+      "qualifiedName": "sleep_nights"
+    }
+  ]
+}
